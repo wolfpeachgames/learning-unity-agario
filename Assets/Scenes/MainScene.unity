@@ -121,6 +121,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &212846090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212846092}
+  - component: {fileID: 212846091}
+  m_Layer: 0
+  m_Name: FoodSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &212846091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212846090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f179d835e9e0b4be0ad44b6d540c447d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Food: {fileID: 2494712932856786614, guid: b629c21575d05419698ca898cac21539, type: 3}
+  spawnRate: 1
+--- !u!4 &212846092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212846090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9836055, y: -1.3607498, z: -14.077261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &423030734
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,3 +405,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   sizeSpeedMultiplier: 0.5
+--- !u!1001 &6521979803449927846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2494712932856786614, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_Name
+      value: Food
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9836055
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3607498
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.077261
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831120223204409671, guid: b629c21575d05419698ca898cac21539,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b629c21575d05419698ca898cac21539, type: 3}
