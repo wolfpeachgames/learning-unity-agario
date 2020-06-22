@@ -13,9 +13,10 @@ public class Eat : MonoBehaviour
     private int score = 0;
 
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == Tag)
+        Debug.Log("got here");
+        if (other.CompareTag(Tag))
         {
             transform.localScale += new Vector3(increase, increase, increase);
             Destroy(other.gameObject);
