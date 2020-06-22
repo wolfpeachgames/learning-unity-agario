@@ -15,7 +15,6 @@ public class Eat : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("got here");
         if (other.CompareTag(Tag))
         {
             transform.localScale += new Vector3(increase, increase, increase);
